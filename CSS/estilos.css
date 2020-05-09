@@ -1,0 +1,107 @@
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+body {
+	background-image: url(../IMAGENS/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: #fff;
+	font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+#banner {
+	background-color: rgba(241, 183, 21);
+	height: 76px;
+	padding: 30px 70px 30px 70px;
+}
+
+#banner h1 {
+	float: left;
+    margin: 0;
+    color: rgb(5, 0, 0);
+    font-family: "Calibri";
+	font-size: 60px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+ul{
+	list-style: none;
+	top: 85px;
+	position: absolute;
+}
+
+img{
+	width: 50px;
+}
+
+input[type="checkbox"]
+{
+	display: none;
+}
+
+nav{
+	background-color: black;
+	width: 250px;
+	height: 100%;
+	left: -250px;
+	position: absolute;
+	transition: .5s;
+}
+
+input[type="checkbox"]:checked ~ nav 
+{
+	transform: translateX(250px)
+
+}
+
+a{
+	display: block;
+	padding: 20px 5px;
+	color: white;
+}
+
+a:hover{
+	background-color: rgba(241, 183, 21);
+
+}
+
+label{
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+
+}
+
+#cardapio{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 80px;
+
+}
+
+#cardapio img {
+	padding: 5px;
+	width: 300px;
+	height: 200px;
+	border-radius: 50px;	
+}
+
+
+#item{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(0,0,0, 0.85);
+	margin: 10px;
+	border-radius: 5px;
+	padding: 20px;
+
+}
