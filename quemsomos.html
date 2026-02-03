@@ -1,48 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Best Burger Studio</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">Best Burger Studio</div>
+            <nav>
+                <button class="menu-toggle" type="button" aria-label="Abrir menu">Menu</button>
+                <ul id="menu-links">
+                    <li><a href="projeto_av1_homepage.html">Início</a></li>
+                    <li><a href="cardapio.html">Projetos</a></li>
+                    <li><a href="quemsomos.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="mailto:contato@bestburgerstudio.com">Contato direto</a>
+        </div>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
+    <section>
+        <div class="container hero-grid">
+            <div>
+                <span class="badge">Sobre mim</span>
+                <h1 class="section-title">Transformo ideias em experiências digitais completas.</h1>
+                <p class="section-subtitle">Sou apaixonado(a) por design, código e estratégia. Crio portfólios, sites institucionais e páginas de vendas que comunicam valor e conversão.</p>
+                <div class="hero-actions">
+                    <a class="btn" href="cardapio.html">Ver projetos</a>
+                    <a class="btn btn-outline" href="mailto:contato@bestburgerstudio.com">Solicitar proposta</a>
+                </div>
+            </div>
+            <aside class="card">
+                <h3>Resumo profissional</h3>
+                <p>Especialista em front-end e UI design com experiência em marcas do varejo, gastronomia e tecnologia. Cada entrega passa por pesquisa, testes e otimização.</p>
+                <ul class="contact-list">
+                    <li>🎯 Foco em resultados e conversão</li>
+                    <li>🧩 Integração com ferramentas de marketing</li>
+                    <li>⚡ Performance e SEO como prioridade</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
 
-        <title>Best Burger | Quem Somos</title>
+    <section>
+        <div class="container">
+            <h2 class="section-title">Principais competências</h2>
+            <p class="section-subtitle">Habilidades técnicas e criativas que dão sustentação ao seu portfólio.</p>
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>Design visual</h3>
+                    <p>Tipografia, cores e hierarquia pensadas para destacar o diferencial do projeto.</p>
+                </article>
+                <article class="card">
+                    <h3>Desenvolvimento moderno</h3>
+                    <p>HTML, CSS e JavaScript com foco em componentes reutilizáveis e desempenho.</p>
+                </article>
+                <article class="card">
+                    <h3>Conteúdo estratégico</h3>
+                    <p>Textos que comunicam autoridade e guiamento claro para cada usuário.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-    </head>
-    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-    <style>
-        h1 {text-align: center;}
-    </style>
+    <section>
+        <div class="container">
+            <h2 class="section-title">Experiência</h2>
+            <p class="section-subtitle">Linha do tempo com entregas relevantes para apresentar credibilidade.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>2024 · Portfólio Premium</h3>
+                    <p>Criação de uma vitrine digital para profissionais criativos com foco em conversão.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2023 · Plataforma gastronômica</h3>
+                    <p>Redesign de e-commerce com navegação rápida e integração com pagamentos.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>2022 · Identidade digital</h3>
+                    <p>Estruturação de branding e guidelines para startups em expansão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="container contact-box">
+            <div>
+                <h2 class="section-title">Pronto(a) para divulgar seu trabalho?</h2>
+                <p class="section-subtitle">Agende um briefing rápido e receba um plano de ação personalizado.</p>
+            </div>
+            <ul class="contact-list">
+                <li>📩 contato@bestburgerstudio.com</li>
+                <li>📞 +55 (11) 99999-9999</li>
+                <li>🕒 Atendimento das 9h às 18h</li>
+            </ul>
+            <a class="btn" href="mailto:contato@bestburgerstudio.com">Quero meu site completo</a>
+        </div>
+    </section>
 
-        <body>
-            <div id="banner">
-                <h1>Best Burger</h1>
-            </div> 
+    <footer>
+        <div class="container">
+            <p>Best Burger Studio · Portfólio completo pronto para personalização.</p>
+        </div>
+    </footer>
 
-            <div class="checkbox"></div>
-            <input type="checkbox" id="chec">
-            <label for="chec">
-                <img src="IMAGENS/menu.png">
-            </label>
-        
-                    <nav>
-                        <ul>
-                            <li><a href="projeto_av1_homepage.html">Home Page</a></li> 
-                        </ul>
-                    </nav>
-        
-                    
-                 <h1>Quem Somos</h1>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuLinks = document.querySelector('#menu-links');
 
-                    <p>A Best Burger veio para criar tendências e inovar como hamburgueria premium, mas isso não pode ficar somente no discurso.
-                    Prezamos por oferecer aos nossos consumidores e amantes da boa comida, o melhor que há em cada matéria-prima, 
-                    em cada ingrediente 
-                    e ser cuidadoso em todos os detalhes que envolvem o prazer de comer em com qualidade e em alto nível.
-                    Para ilustrar um pouco a forma como trabalhamos, a escolha da carne que utilizamos em nossos blends (combinações), 
-                    para formar o hambúrguer, é algo que prezamos muito, pois é essencial para termos um ótimo resultado.
-                    É por isso, que a It Burger só trabalha com carnes nobres do mercado. Com diversos tipos de cortes, 
-                    esses combinam bovios jovens das raças britânicas Aberdeens Angus, Red Angus e Hereford, responsáveis por produzir 
-                    as melhores carnes do mundo, pois são intensamente marmoreadas, suculentas e tenras.</p>
-
-
-        </body>
-</html>    
+        menuToggle.addEventListener('click', () => {
+            menuLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
