@@ -1,87 +1,107 @@
 <!DOCTYPE html>
-<hmtl lang="pt-br">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-
-    <title>Best Burger | Cardápio</title>
-
-    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | Best Burger Studio</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-
 <body>
-    <header>
-        <div id="banner">
-            <h1>Best Burger</h1>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">Best Burger Studio</div>
+            <nav>
+                <button class="menu-toggle" type="button" aria-label="Abrir menu">Menu</button>
+                <ul id="menu-links">
+                    <li><a href="projeto_av1_homepage.html">Início</a></li>
+                    <li><a href="cardapio.html">Projetos</a></li>
+                    <li><a href="quemsomos.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <a class="btn" href="quemsomos.html">Vamos conversar</a>
         </div>
-
-        <div class="checkbox"></div>
-        <input type="checkbox" id="chec">
-        <label for="chec">
-            <img src="IMAGENS/menu.png">
-            </label>
-    
-                <nav>
-                    <ul>
-                        <li><a href="projeto_av1_homepage.html">Home Page</a></li> 
-                    </ul>
-                </nav>
-
-        <div id="cardapio">
-            <div id="item">
-                <h2>Tropical Burger</h2>
-                <img src="IMAGENS/tropicalburger.jpg" alt="tropicalburger">
-                <p>Blend de 180 g, mussarela, bacon e alface</p>
-                <h1>R$ 18,00</h1>
-                <button>Comprar</button>
-            </div>
-
-            <div id="item">
-                <h2>Super Burger</h2>
-                <img src="IMAGENS/superburger.jpg" alt="superburger">
-                <p>Blend de 180 g, cheddar, bacon e ovo</p>
-                <h1>R$ 20,00</h1>
-                <button>Comprar</button>
-            </div>
-
-            <div id="item">
-                <h2>Monster Burger</h2>
-                <img src="IMAGENS/burgermonster.jpg" alt= "burgermonster">
-                <p>2 blends de 180 g, mussarela, bacon e ovo</p>
-                <h1>R$ 25,00</h1>
-                <button>Comprar</button>
-            </div>
-
-        </div>
-
     </header>
 
+    <section>
+        <div class="container">
+            <h1 class="section-title">Projetos em destaque</h1>
+            <p class="section-subtitle">Seleção de trabalhos com foco em experiência, performance e identidade visual.</p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="card">
+                        <img src="IMAGENS/tropicalburger.jpg" alt="Landing page tropical">
+                        <div class="card-content">
+                            <span class="badge">Landing page</span>
+                            <h3>Campanha Tropical</h3>
+                            <p>Site promocional com storytelling visual e CTA para captação de leads.</p>
+                            <a class="btn btn-outline" href="#">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="card">
+                        <img src="IMAGENS/superburger.jpg" alt="Dashboard corporativo">
+                        <div class="card-content">
+                            <span class="badge">Dashboard</span>
+                            <h3>Plataforma Super Metrics</h3>
+                            <p>Interface para acompanhamento de indicadores em tempo real e gestão de equipes.</p>
+                            <a class="btn btn-outline" href="#">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="card">
+                        <img src="IMAGENS/burgermonster.jpg" alt="E-commerce gastronômico">
+                        <div class="card-content">
+                            <span class="badge">E-commerce</span>
+                            <h3>Loja Monster Gourmet</h3>
+                            <p>E-commerce responsivo com carrinho otimizado e vitrine inteligente.</p>
+                            <a class="btn btn-outline" href="#">Ver detalhes</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="container">
+            <h2 class="section-title">Processo de criação</h2>
+            <p class="section-subtitle">Método estruturado para garantir entregas no prazo e alinhadas ao briefing.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>01. Descoberta</h3>
+                    <p>Reuniões iniciais, entendimento do público e definição das metas de negócio.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>02. Estratégia</h3>
+                    <p>Wireframes, mapa do site e protótipos para validar a jornada.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>03. Execução</h3>
+                    <p>Design final e desenvolvimento com foco em performance, SEO e acessibilidade.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>04. Lançamento</h3>
+                    <p>Publicação, monitoramento e suporte para evolução contínua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>Quer ver mais? Envie um e-mail para contato@bestburgerstudio.com.</p>
+        </div>
+    </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuLinks = document.querySelector('#menu-links');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        menuToggle.addEventListener('click', () => {
+            menuLinks.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
